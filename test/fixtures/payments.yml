@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  lease: one
+  tenant: one
+  amount: 9.99
+  paid_on: 2025-05-03
+
+two:
+  lease: two
+  tenant: two
+  amount: 9.99
+  paid_on: 2025-05-03

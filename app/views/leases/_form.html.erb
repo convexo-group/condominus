@@ -1,0 +1,47 @@
+<%= form_with(model: lease) do |form| %>
+  <% if lease.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(lease.errors.count, "error") %> prohibited this lease from being saved:</h2>
+
+      <ul>
+        <% lease.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :unit_id, style: "display: block" %>
+    <%= form.text_field :unit_id %>
+  </div>
+
+  <div>
+    <%= form.label :tenant_id, style: "display: block" %>
+    <%= form.text_field :tenant_id %>
+  </div>
+
+  <div>
+    <%= form.label :price, style: "display: block" %>
+    <%= form.text_field :price %>
+  </div>
+
+  <div>
+    <%= form.label :duration, style: "display: block" %>
+    <%= form.number_field :duration %>
+  </div>
+
+  <div>
+    <%= form.label :due_day, style: "display: block" %>
+    <%= form.number_field :due_day %>
+  </div>
+
+  <div>
+    <%= form.label :active, style: "display: block" %>
+    <%= form.checkbox :active %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
