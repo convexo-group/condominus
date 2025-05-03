@@ -1,0 +1,28 @@
+{
+  "name": "condominus",
+  "version": "1.0.0",
+  "description": "This README would normally document whatever steps are necessary to get the\r application up and running.",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/convexo-group/condominus.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/convexo-group/condominus/issues"
+  },
+  "homepage": "https://github.com/convexo-group/condominus#readme",
+  "dependencies": {
+    "@hotwired/turbo-rails": "^8.0.13",
+    "stimulus": "^3.2.2"
+  }
+}

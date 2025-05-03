@@ -7,4 +7,5 @@
       <%= property.address %><br>
     </li>
   <% end %>
+  <%= button_to 'Atualizar Mensagem', properties_path, method: :get, data: { turbo_action: "replace" } %>
 </ul>
