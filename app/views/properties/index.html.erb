@@ -1,0 +1,10 @@
+<h1>Available Properties</h1>
+
+<ul>
+  <% @properties.each do |property| %>
+    <li>
+      <strong><%= link_to property.name, property_path(property) %></strong><br>
+      <%= property.address %><br>
+    </li>
+  <% end %>
+</ul>
