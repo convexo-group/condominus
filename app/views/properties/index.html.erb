@@ -1,11 +1,21 @@
-<h1>Available Properties</h1>
 
-<ul>
+
+
+   
+  <h1 class="text-3xl font-bold underline ">Available Properties</h1>
+
+  <ul>
   <% @properties.each do |property| %>
     <li>
       <strong><%= link_to property.name, property_path(property) %></strong><br>
       <%= property.address %><br>
     </li>
   <% end %>
-  <%= button_to 'Atualizar Mensagem', properties_path, method: :get, data: { turbo_action: "replace" } %>
-</ul>
+  <div class="bg-green-500 text-white p-4 text-center">
+    Tailwind CSS está funcionando!
+  </div>
+  </ul>
+
+
+
+
